@@ -3,9 +3,9 @@ USE DiskBebidas;
 CREATE TABLE clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20),
-    endereco VARCHAR(255),
-    bairro VARCHAR(50),
+    telefone VARCHAR(20) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    bairro VARCHAR(50) NOT NULL,
     ponto_referencia VARCHAR(100),
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
